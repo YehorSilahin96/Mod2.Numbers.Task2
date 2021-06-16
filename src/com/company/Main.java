@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //initialization
         Scanner in = new Scanner(System.in);
         System.out.print("Input an integer number: ");
         int n = in.nextInt();
