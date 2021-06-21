@@ -20,7 +20,7 @@ public class Main {
         }
     }
 
-    // Method for checking our number
+    // Method for checking our numbers
     public static String checkUglyNumber(int number) {
         while (number != 1) {
             if (number % 5 == 0) {
