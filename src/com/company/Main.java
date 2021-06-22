@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    static final String notUgly = "It's not an ugly number";
-    static final String ugly = "It's an ugly number";
+    public static final String notUgly = "It's not an ugly number";
+    public static final String ugly = "It's an ugly number";
 
     public static void main(String[] args) {
         //initialization
