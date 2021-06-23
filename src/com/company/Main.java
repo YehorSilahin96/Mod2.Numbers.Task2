@@ -17,9 +17,10 @@ public class Main {
         } else {
             if (checkUglyNumber(number)) {
                 System.out.println(notUgly);
-            } else  {
+            } else {
                 System.out.println(ugly);
             }
+            System.out.println(checkUglyNumber(number));
         }
     }
 
@@ -38,3 +39,4 @@ public class Main {
         return false;
     }
 }
+
