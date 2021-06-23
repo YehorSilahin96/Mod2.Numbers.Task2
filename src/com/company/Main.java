@@ -20,7 +20,6 @@ public class Main {
             } else {
                 System.out.println(ugly);
             }
-            System.out.println(checkUglyNumber(number));
         }
     }
 
