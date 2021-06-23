@@ -8,7 +8,6 @@ public class Main {
     public static final String ugly = "It's an ugly number";
 
     public static void main(String[] args) {
-        //initialization
         Scanner in = new Scanner(System.in);
         System.out.print("Input an integer number: ");
         int number = in.nextInt();
@@ -16,12 +15,16 @@ public class Main {
         if (number <= 0) {
             System.out.print("Input a correct number.");
         } else {
+            if (checkUglyNumber(number)) {
+                System.out.println(notUgly);
+            } else  {
+                System.out.println(ugly);
+            }
             System.out.println(checkUglyNumber(number));
         }
     }
 
-    // Method for checking our numbers
-    public static String checkUglyNumber(int number) {
+    public static boolean checkUglyNumber(int number) {
         while (number != 1) {
             if (number % 5 == 0) {
                 number /= 5;
@@ -30,10 +33,10 @@ public class Main {
             } else if (number % 2 == 0) {
                 number /= 2;
             } else {
-                return notUgly;
+                return true;
             }
         }
-        return ugly;
+        return false;
     }
 }
 
